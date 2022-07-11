@@ -1,0 +1,131 @@
+.calculator {
+  margin: auto;
+  max-width: 400px;
+}
+.buttonContainer {
+  background-color: black;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+.output {
+  background-color: rgb(0, 0, 0, 0.75);
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.output .priviousOperand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+.output .currentOperand {
+  color: white;
+  font-size: 2.5rem;
+}
+.buttonContainer > button {
+  cursor: pointer;
+  font-size: 2rem;
+  outline: none;
+  border: 1px solid white;
+  background-color: rgb(255, 255, 255, 0.75);
+}
+.buttonContainer > button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.backSpace {
+  grid-column: span 2;
+  grid-row: 1/2;
+}
+.remainder {
+  grid-row: 2/3;
+}
+.clearAll {
+  grid-row: 1/2;
+}
+.clear {
+  grid-row: 1/2;
+}
+.squareNum {
+  grid-row: 2/3;
+}
+.squareRoot {
+  grid-row: 2/3;
+}
+.divide {
+  grid-row: 2/3;
+}
+.multiply {
+  grid-row: 3/4;
+  grid-column: 4/5;
+}
+.substract {
+  grid-row: 4/5;
+  grid-column: 4/5;
+}
+.add {
+  grid-row: 5/6;
+  grid-column: 4/5;
+}
+.equals {
+  grid-row: 6/7;
+  grid-column: 4/5;
+}
+.dot {
+  grid-row: 6/7;
+  grid-column: 3/4;
+}
+.addSign {
+  grid-row: 6/7;
+  grid-column: 1/2;
+}
+.zero {
+  grid-row: 6/7;
+  grid-column: 2/3;
+}
+.one {
+  grid-row: 5/6;
+  grid-column: 1/2;
+}
+.two {
+  grid-row: 5/6;
+  grid-column: 2/3;
+}
+.three {
+  grid-row: 5/6;
+  grid-column: 3/4;
+}
+.four {
+  grid-row: 4/5;
+  grid-column: 1/2;
+}
+.five {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+.five {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+.six {
+  grid-row: 4/5;
+  grid-column: 3/4;
+}
+.seven {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+.eight {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+.nine {
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
